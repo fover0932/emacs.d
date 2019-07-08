@@ -16,23 +16,6 @@
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-
-
-(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
-(package-initialize) ;; You might already have this line
-
-
-
-;;(when (>= emacs-major-version 24)
-;;  (require 'package)
-;;  (add-to-list
-;;   'package-archives
-;;   '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-;;   t)
-;;  (package-initialize))
-
-
 (require 'init-benchmarking) ;; Measure startup time
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
